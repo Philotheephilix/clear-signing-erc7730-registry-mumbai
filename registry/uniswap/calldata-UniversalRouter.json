@@ -1,0 +1,40 @@
+{
+  "context": {
+    "contract": {
+      "deployments": [
+        {
+          "chainId": 1,
+          "address": "0x66a9893cc07d91d95644aedd05d03f95e1dba8af"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "owner": "Uniswap"
+  },
+  "display": {
+    "formats": {
+      "execute1(bytes commands, bytes[] inputs, uint256 deadline)": {
+        "__signature": "execute1(bytes commands, bytes[] inputs, uint256 deadline)",
+        "intent": "Universal Router batch",
+        "fields": [
+          {
+            "label": "Commands",
+            "path": "commands",
+            "format": "raw"
+          },
+          {
+            "label": "Inputs (count)",
+            "path": "inputs.[]",
+            "format": "raw"
+          },
+          {
+            "label": "Deadline",
+            "path": "deadline",
+            "format": "raw"
+          }
+        ]
+      }
+    }
+  }
+}
